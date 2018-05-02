@@ -1,6 +1,6 @@
 # bash-prompt
 
-based on [Easy Bash Prompt Generator](http://ezprompt.net/)
+Based on work by [@woods](https://github.com/woods)
 
 ## How to apply
 
@@ -16,19 +16,19 @@ $ source setup.sh
 It will change your prompt as following:
 
 ```
-[hh:mm:ss] username@path [git-status] $
+[virtual env] username@host path (git-status) $
 ```
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `username`
+- ![#22b14c](https://placehold.it/15/22b14c/000000?text=+) `username`
 - ![#f7ca18](https://placehold.it/15/f7ca18/000000?text=+) `path`
-- ![#22b14c](https://placehold.it/15/22b14c/000000?text=+) `[git-status]`
+- ![#22b14c](https://placehold.it/15/22b14c/000000?text=+) or ![#22b14c](https://placehold.it/15/22b14c/000000?text=+) `[git-status]`
 
 Maybe you got:
 
 ```
-[07:50:33] joonas@~/bash-prompt [master !] $ echo "hello"
+[env] joonas@ubuntu-server ~/bash-prompt (master) $ echo "hello"
 hello
-[07:50:33] joonas@~/bash-prompt [master !] $ 
+[env] joonas@ubuntu-server ~/bash-prompt (master) $ 
 ```
 
 
