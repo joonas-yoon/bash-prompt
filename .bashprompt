@@ -234,9 +234,11 @@ function set_bash_prompt () {
     BRANCH=''
   fi
 
+  CURRENT_TIME="${LIGHT_GRAY}(\t)${COLOR_NONE}"
+
   # Set the bash prompt variable.
   PS1="
-${PYTHON_VIRTUALENV}${GREEN}\u@\h ${YELLOW}\w${COLOR_NONE} ${BRANCH}${PROMPT_SYMBOL} "
+${CURRENT_TIME} ${PYTHON_VIRTUALENV}${GREEN}\u@\h ${YELLOW}\w${COLOR_NONE} ${BRANCH}${PROMPT_SYMBOL} "
 }
 
 # Tell bash to execute this function just before displaying its prompt.
